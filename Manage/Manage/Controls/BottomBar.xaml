@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Manage.Controls.BottomBar">
+	<ContentView.Content>
+    <StackLayout Orientation="Vertical" VerticalOptions="End"  HorizontalOptions="CenterAndExpand" >
+        <Grid   BackgroundColor="Transparent" x:Name="Gtab"  >
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                 <ColumnDefinition Width="*" />
+
+            </Grid.ColumnDefinitions>
+
+            <StackLayout x:Name="Manage" ClassId="0" Orientation="Vertical" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="End">
+                     <Label x:Name="myLabel0" Text="Manage" TextColor="Red"  />
+                    <Image  Source="home.png"  WidthRequest="30" HeightRequest="30" />
+                    <StackLayout.GestureRecognizers>
+                     <TapGestureRecognizer Tapped="onTapCommand" />
+                    </StackLayout.GestureRecognizers>
+       
+                    
+            </StackLayout>
+
+            <StackLayout ClassId="1" Orientation="Vertical"  Grid.Column="1"  HorizontalOptions="CenterAndExpand" VerticalOptions="End">
+                     <Label x:Name="myLabel1" Text="Notice" TextColor="Black"  />
+                    <Image Source="bell.png" WidthRequest="30" HeightRequest="30"  />
+                    <StackLayout.GestureRecognizers>
+                     <TapGestureRecognizer   Tapped="onTapCommand" />
+                    </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout ClassId="2"  Orientation="Vertical"  Grid.Column="2"  HorizontalOptions="CenterAndExpand" VerticalOptions="End">
+                     <Label x:Name="myLabel2" Text="Buy" TextColor="Black" />
+                    <Image  Source="star.png"  WidthRequest="30" HeightRequest="30" />
+                    <StackLayout.GestureRecognizers>
+                     <TapGestureRecognizer Tapped="onTapCommand" />
+                    </StackLayout.GestureRecognizers>
+            </StackLayout>
+                <StackLayout ClassId="3" Orientation="Vertical"  Grid.Column="3"  HorizontalOptions="CenterAndExpand" VerticalOptions="End">
+                     <Label x:Name="myLabel3" Text="Order" TextColor="Black" />
+                    <Image  Source="star.png"  WidthRequest="30" HeightRequest="30" />
+                    <StackLayout.GestureRecognizers>
+                     <TapGestureRecognizer Tapped="onTapCommand" />
+                    </StackLayout.GestureRecognizers>
+            </StackLayout>
+                
+        </Grid>
+       </StackLayout> 
+
+	</ContentView.Content>
+</ContentView>

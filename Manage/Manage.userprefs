@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{E9F50EE0-BD75-497A-8753-33643648AB3D}|Default">
+  <MonoDevelop.Ide.ItemProperties.Manage.Droid PreferredExecutionTarget="Android.New" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Manage/:Users:rakesh:Desktop:Xamriam Self:Manage:Manage:ManagePage.xaml">
+    <Files>
+      <File FileName="Manage/:Users:rakesh:Desktop:Xamriam Self:Manage:Manage:ManagePage.xaml" Line="19" Column="1" />
+      <File FileName="Manage/HomePage.xaml" Line="83" Column="1" />
+      <File FileName="Manage/MainPage.xaml" Line="19" Column="20" />
+      <File FileName="Manage/Controls/BottomBar.xaml" Line="53" Column="1" />
+      <File FileName="Manage/Controls/BottomBar.xaml.cs" Line="77" Column="10" />
+      <File FileName="Manage/HomePage.xaml.cs" Line="87" Column="49" />
+      <File FileName="Manage/HelpPage.xaml" Line="6" Column="1" />
+      <File FileName="Manage/obj/Debug/Manage.MainPage.xaml.g.cs" Line="22" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Manage.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D23E6C2A-D366-4D7C-B3E8-F87BC3923778">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.Manage.iOS>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

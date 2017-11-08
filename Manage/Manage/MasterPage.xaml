@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Manage.MasterPage"
+  Padding="0,40,0,0" Icon="hamburger.png" Title="Master" BackgroundColor="Silver" >
+
+    
+    <StackLayout BackgroundColor="Silver" >
+        <StackLayout >
+         <Image x:Name="img" Source="addpic.png" BackgroundColor="Transparent" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Image>
+            <Label Text = "USER NAME" HorizontalOptions="CenterAndExpand" Margin="0,10,0,0" ></Label>
+      </StackLayout>
+        <ListView x:Name="listView" SeparatorVisibility="None" BackgroundColor="Silver">
+            <ListView.ItemTemplate >
+                <DataTemplate >
+                    <ViewCell >
+                        <Grid Padding="5,10" BackgroundColor="Silver">
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" VerticalOptions="FillAndExpand" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

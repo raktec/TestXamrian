@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+  xmlns:controls="clr-namespace:Manage.Controls"
+    x:Class="Manage.HomePage" Title="Manage">
+
+    <ContentPage.Content>
+    <StackLayout Orientation="Vertical" BackgroundColor="Aqua" >
+         <StackLayout x:Name ="manage"   IsVisible = "true" Orientation="Vertical" VerticalOptions="Start"  HorizontalOptions="CenterAndExpand" >
+                              <Label  Text="manage" TextColor="Black"  />
+
+
+
+                
+
+        </StackLayout>
+
+         <StackLayout x:Name ="notice"   IsVisible = "true" Orientation="Vertical"   HorizontalOptions="CenterAndExpand" >
+                                       <Label  Text="notice" TextColor="Black"  />
+
+        </StackLayout>
+
+        <StackLayout x:Name ="buy"   IsVisible = "true" Orientation="Vertical"   HorizontalOptions="CenterAndExpand" >
+                                               <Label  Text="buy" TextColor="Black"  />
+
+        </StackLayout>
+        <StackLayout x:Name ="order"   IsVisible = "true" Orientation="Vertical"   HorizontalOptions="CenterAndExpand" >
+                                                       <Label  Text="order" TextColor="Black"  />
+
+        </StackLayout>
+
+
+        
+       <StackLayout   IsVisible = "true" Orientation="Vertical" VerticalOptions="EndAndExpand"  HorizontalOptions="CenterAndExpand" >
+        <Grid   BackgroundColor="Lime" x:Name="Gtab" VerticalOptions="End"  >
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                 <ColumnDefinition Width="*" />
+
+            </Grid.ColumnDefinitions>
+
+            <StackLayout  ClassId="0" Orientation="Vertical" Grid.Column="0" HorizontalOptions="CenterAndExpand" >
+                     <Label x:Name="myLabel0" Text="Manage" TextColor="Red"  />
+                    <Image  Source="home.png"  WidthRequest="30" HeightRequest="30" />
+                    <StackLayout.GestureRecognizers>
+                     <TapGestureRecognizer Tapped="onTapCommand" />
+                    </StackLayout.GestureRecognizers>
+       
+                    
+            </StackLayout>
+
+            <StackLayout ClassId="1" Orientation="Vertical"  Grid.Column="1"  HorizontalOptions="CenterAndExpand">
+                     <Label x:Name="myLabel1" Text="Notice" TextColor="Black"  />
+                    <Image Source="bell.png" WidthRequest="30" HeightRequest="30"  />
+                    <StackLayout.GestureRecognizers>
+                     <TapGestureRecognizer   Tapped="onTapCommand" />
+                    </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout ClassId="2"  Orientation="Vertical"  Grid.Column="2"  HorizontalOptions="CenterAndExpand" >
+                     <Label x:Name="myLabel2" Text="Buy" TextColor="Black" />
+                    <Image  Source="star.png"  WidthRequest="30" HeightRequest="30" />
+                    <StackLayout.GestureRecognizers>
+                     <TapGestureRecognizer Tapped="onTapCommand" />
+                    </StackLayout.GestureRecognizers>
+            </StackLayout>
+                <StackLayout ClassId="3" Orientation="Vertical"  Grid.Column="3"  HorizontalOptions="CenterAndExpand" >
+                     <Label x:Name="myLabel3" Text="Order" TextColor="Black" />
+                    <Image  Source="star.png"  WidthRequest="30" HeightRequest="30" />
+                    <StackLayout.GestureRecognizers>
+                     <TapGestureRecognizer Tapped="onTapCommand" />
+                    </StackLayout.GestureRecognizers>
+            </StackLayout>
+                
+        </Grid>
+      </StackLayout>
+      </StackLayout>
+
+	</ContentPage.Content>
+</ContentPage>
